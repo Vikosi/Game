@@ -10,6 +10,7 @@ int main()
 	int t;
 	int m;
 	int v;
+	double x;
 
 	try {
 		Screen screen;
