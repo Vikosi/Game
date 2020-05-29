@@ -7,6 +7,9 @@
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+	int t;
+	int m;
+	int v;
 
 	try {
 		Screen screen;
