@@ -56,8 +56,8 @@ Game::Command Game::get_command() {
 Coord Game::make_food() {
 	Coord food;
 	do {
-		food.x = rand() % (width - 2) + 1;
-		food.y = rand() % (height - 2) + 1;
+		food.x = rand() % (width - 3) + 1;
+		food.y = rand() % (height - 3) + 1;
 	} while (snake.into(food));
 
 	return food;
