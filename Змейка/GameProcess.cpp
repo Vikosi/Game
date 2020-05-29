@@ -146,7 +146,7 @@ void Game::game_loop() {
 			snake.move(delta, scr);     // сдвинуть змею на delta
 
 			if (snake.head() == food) { // если координата головы змеи совпадает с координатой еды, то
-				snake.grow(food, 1);    // увеличить длину змеи
+				snake.grow(food, 3);    // увеличить длину змеи
 				food = make_food();     // вычислить координаты новой еды
 				scr.pos(food.x, food.y, FOOD); // вывести еду на экран
 			}
