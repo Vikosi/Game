@@ -1,6 +1,6 @@
 #include "Snake.h"
 
-const char SNAKE_TAIL = '@';        // символ для отрисовки сегментов тела змеи, кроме головы
+const char SNAKE_TAIL = 'О';        // символ для отрисовки сегментов тела змеи, кроме головы
 
 Snake::Snake() {
 	head_mark = '<';

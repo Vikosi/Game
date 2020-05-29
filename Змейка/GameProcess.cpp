@@ -63,7 +63,7 @@ Coord Game::make_food() {
 	return food;
 }
 
-const char BORDER = '#';    // символ для рисования рамки игрового поля
+const char BORDER = 'Х';    // символ для рисования рамки игрового поля
 
 void Game::draw_field() {
 
@@ -82,7 +82,7 @@ void Game::draw_field() {
 }
 
 bool Game::once_more() {
-	scr.pos_str(width / 2 - 8, height - 9, "O n c e    m o r e ?");
+	scr.pos_str(width / 2 - 8, height - 9, "Сыграем еще раз?");
 
 	int ch = _getch();
 	clearkeys();
@@ -156,7 +156,7 @@ void Game::game_loop() {
 
 	} while (stt == STATE_OK);          // играем, пока змея жива
 
-	scr.pos_str(width / 2 - 8, 10, " G a m e    o v e r ");
+	scr.pos_str(width / 2 - 8, 10, "Игра окончена");
 	clearkeys();
 	_getch();
 	clearkeys();
